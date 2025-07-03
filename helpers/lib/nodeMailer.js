@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const { EMAIL_USER, EMAIL_PASSWORD, BASE_URL } = require('../../config/config');
 
 // Nodemailer transporter setup (this example uses Gmail, but you can use any service)
 // const transporter = nodemailer.createTransport({
@@ -14,8 +15,8 @@ const createTransporter = () => {
     return nodemailer.createTransport({
         service: 'gmail', // or your preferred email service
         auth: {
-            user: 'kishancoc99@gmail.com',
-            pass: 'cqoyuomiedunartc',
+            user: EMAIL_USER,
+            pass: EMAIL_PASSWORD,
         },
         // Alternative configuration for custom SMTP
         /*
@@ -112,7 +113,7 @@ const sendMail = async (
     name,
     emailId,
     enrollmentNumber,
-    baseUrl = 'http://192.168.1.24:5173',
+    baseUrl = BASE_URL,
 ) => {
     try {
         // Create the certificate link

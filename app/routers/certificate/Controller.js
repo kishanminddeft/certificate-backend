@@ -3,6 +3,7 @@ const UNIVERSITY_CONTRACT_ABI = require('../../../helpers/lib/CertificateABI.jso
 const { Transaction, User } = require('../../models');
 const { Op, Sequelize } = require('sequelize');
 const { sequelize } = require('../../utils');
+const { UNIVERSITY_CONTRACT_ADDRESS } = require('../../../config/config');
 
 class Controller {
     constructor() {
@@ -11,8 +12,7 @@ class Controller {
     }
 
     async getUniversityContract() {
-        const UNIVERSITY_CONTRACT_ADDRESS =
-            '0xA3e71D181A9c54AA3f7730b06133a72FF74a38AE';
+        const UNIVERSITY_CONTRACT_ADDRESS = UNIVERSITY_CONTRACT_ADDRESS;
         const CELO_TESTNET_RPC = 'https://alfajores-forno.celo-testnet.org/';
 
         try {

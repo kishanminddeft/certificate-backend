@@ -26,6 +26,12 @@ const config = {
     SMTP_FROM: process.env.SMTP_FROM || 'example@gmail.com',
     WEB_URL: process.env.WEB_URL || 'http://localhost:5000',
     SITE_NAME: process.env.SITE_NAME || 'Demo',
+
+    BASE_URL: process.env.BASE_URL,
+    EMAIL_USER: process.env.EMAIL_USER,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+
+    UNIVERSITY_CONTRACT_ADDRESS: process.env.UNIVERSITY_CONTRACT_ADDRESS,
 };
 
 console.warn(config.NODE_ENV);
