@@ -1,15 +1,6 @@
 const nodemailer = require('nodemailer');
 const { EMAIL_USER, EMAIL_PASSWORD, BASE_URL } = require('../../config/config');
 
-// Nodemailer transporter setup (this example uses Gmail, but you can use any service)
-// const transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//         user: 'kishancoc99@gmail.com',
-//         pass: 'cqoyuomiedunartc',
-//     },
-// });
-
 // Email configuration
 const createTransporter = () => {
     return nodemailer.createTransport({
