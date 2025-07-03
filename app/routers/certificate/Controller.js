@@ -4,6 +4,7 @@ const { Transaction, User } = require('../../models');
 const { Sequelize } = require('sequelize');
 const { sequelize } = require('../../utils');
 const { UNIVERSITY_CONTRACT_ADDRESS } = require('../../../config/config');
+const { sendMail } = require('../../../helpers/lib/nodeMailer');
 
 class Controller {
     constructor() {
@@ -151,6 +152,9 @@ class Controller {
             if (receipt.status === 1) {
                 // ✅ Only mark transaction as confirmed if it succeeded
                 // sendMail('Aarav Patel', 'kishan.dave@minddeft.net', '20250001031');
+                await students.forEach((s) => {
+                    sendMail(s.full_name, s.email, s.enrollment_number);
+                });
 
                 await transactionRecord.update({
                     block_number: receipt.blockNumber,
