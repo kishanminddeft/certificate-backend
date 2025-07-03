@@ -1,7 +1,7 @@
 const ethers = require('ethers');
 const UNIVERSITY_CONTRACT_ABI = require('../../../helpers/lib/CertificateABI.json');
 const { Transaction, User } = require('../../models');
-const { Op, Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 const { sequelize } = require('../../utils');
 const { UNIVERSITY_CONTRACT_ADDRESS } = require('../../../config/config');
 
@@ -12,7 +12,6 @@ class Controller {
     }
 
     async getUniversityContract() {
-        const UNIVERSITY_CONTRACT_ADDRESS = UNIVERSITY_CONTRACT_ADDRESS;
         const CELO_TESTNET_RPC = 'https://alfajores-forno.celo-testnet.org/';
 
         try {
@@ -56,7 +55,6 @@ class Controller {
 
             // Check wallet balance
             const balance = await provider.getBalance(wallet.address);
-            const balanceInEth = ethers.formatEther(balance);
 
             if (balance < ethers.parseEther('0.01')) {
                 return res.status(400).json({
