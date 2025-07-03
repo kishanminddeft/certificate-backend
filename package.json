@@ -1,0 +1,47 @@
+{
+    "name": "white-rhino-e-wallet",
+    "version": "2.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "dev": "nodemon --inspect index.js",
+        "debug": "node --inspect index.js",
+        "start": "node index.js",
+        "prepare": "husky"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.7",
+        "bcrypt": "^5.1.1",
+        "bcryptjs": "^3.0.2",
+        "body-parser": "^1.20.3",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "ethers": "^6.14.4",
+        "express": "^4.21.0",
+        "express-validator": "^7.2.0",
+        "helmet": "^8.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.5-lts.1",
+        "node-cache": "^5.1.2",
+        "nodemailer": "^6.9.15",
+        "pg": "^8.13.0",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.37.4",
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.11.1",
+        "husky": "^9.1.6",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3"
+    }
+}
