@@ -14,7 +14,7 @@ try {
         // Sample user data to be inserted (added user_id field)
 
         // insertUsers();
-        // sendMail('Aarav Patel', 'kishan.dave@minddeft.net', '20250001031');
+        // sendMail('Aarav Patel', 'kishan.dave@minddeft.com', '20250001031');
         // insertUsers();
         // const cryptocurrencyResponse = await Cryptocurrency.create({
         //     crypto_id: helper.uuid(),
