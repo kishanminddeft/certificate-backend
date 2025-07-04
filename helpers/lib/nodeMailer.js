@@ -174,7 +174,7 @@ const sendMail = async (
 ) => {
     try {
         // Create the certificate link
-        const certificateLink = `${baseUrl}/University/dashboard/viewCertificates/${enrollmentNumber}`;
+        const certificateLink = `${baseUrl}/University/dashboard/viewcredential/${enrollmentNumber}`;
 
         // Create transporter
         const transporter = createTransporter();
