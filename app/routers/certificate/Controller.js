@@ -153,7 +153,11 @@ class Controller {
                 // ✅ Only mark transaction as confirmed if it succeeded
                 // sendMail('Aarav Patel', 'kishan.dave@minddeft.net', '20250001031');
                 await students.forEach((s) => {
-                    sendMail(s.full_name, s.email, s.enrollment_number);
+                    sendMail(
+                        s.full_name,
+                        'pratik.limbachiya@minddeft.com',
+                        s.enrollment_number,
+                    );
                 });
 
                 await transactionRecord.update({
