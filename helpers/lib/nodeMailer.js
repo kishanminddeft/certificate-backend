@@ -145,12 +145,12 @@ const createEmailTemplate = (name, enrollmentNumber, certificateLink) => {
           <!-- Footer Section -->
           <tr>
             <td style="background-color:#2c3e50; color:#ecf0f1; padding:25px 30px; text-align:center;">
-              <p class="outlook-font" style="font-size:14px; margin:0 0 8px 0;"><strong>Swaminarayan University Academic Office</strong></p>
+              <p class="outlook-font" style="font-size:14px; margin:0 0 8px 0;"><strong>Gujarat Technological University</strong></p>
               <p class="outlook-font" style="font-size:13px; opacity:0.8; color:#ecf0f1; margin:0;">
-                📧 support@swaminarayanuniversity.edu | 📞 +91 63576 75561/2/3
+                📧 support@gtu.edu | 📞 079-23267521/570
               </p>
               <p class="outlook-font" style="font-size:13px; opacity:0.8; color:#ecf0f1; margin:0;">
-                🌐 https://www.swaminarayanuniversity.ac.in | 📍 Swaminarayan University Campus, Gujarat
+                🌐 https://www.gtu.ac.in/ | 📍 Gujarat Technological University, Gujarat
               </p>
             </td>
           </tr>
