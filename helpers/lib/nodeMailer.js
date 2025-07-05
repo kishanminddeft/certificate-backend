@@ -64,7 +64,7 @@ const createEmailTemplate = (name, enrollmentNumber, certificateLink) => {
                       Dear ${name},
                     </p>
                     <p class="outlook-font" style="font-size:16px; color:#555; margin:0 0 25px 0; line-height:1.7;">
-                      Congratulations! Your credential has been successfully generated and is now available for viewing and download through our Swaminarayan University portal.
+                      Congratulations! Your credential has been successfully generated and is now available for viewing and download through our Swaminarayan University portal created by Gujarat Technological University.
                     </p>
                   </td>
                 </tr>
@@ -150,7 +150,7 @@ const createEmailTemplate = (name, enrollmentNumber, certificateLink) => {
                 📧 support@gtu.edu | 📞 079-23267521/570
               </p>
               <p class="outlook-font" style="font-size:13px; opacity:0.8; color:#ecf0f1; margin:0;">
-                🌐 https://www.gtu.ac.in/ | 📍 Gujarat Technological University, Gujarat
+                🌐 https://www.gtu.ac.in | 📍 Gujarat Technological University, Gujarat
               </p>
             </td>
           </tr>
@@ -182,7 +182,7 @@ const sendMail = async (
         // Email options
         const mailOptions = {
             from: {
-                name: 'Swaminarayan university Academic Office',
+                name: 'Gujarat Technological University',
                 address: process.env.EMAIL_USER,
             },
             to: emailId,
@@ -204,7 +204,7 @@ const sendMail = async (
         If you have any questions, please contact our support team.
         
         Best regards,
-        Swaminarayan university Academic Office
+        Gujarat Technological University Office
       `,
         };
 
